@@ -6,7 +6,7 @@ export default class Navbar extends Component {
         return (
         <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <ReactBootStrap.Container>
-          <ReactBootStrap.Navbar.Brand href="#home">Trigger Happy Havoc</ReactBootStrap.Navbar.Brand>
+          <ReactBootStrap.Navbar.Brand href="/home">Trigger Happy Havoc</ReactBootStrap.Navbar.Brand>
           <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
             <ReactBootStrap.Nav className="me-auto">
@@ -14,11 +14,17 @@ export default class Navbar extends Component {
               <ReactBootStrap.Nav.Link href="#pricing"></ReactBootStrap.Nav.Link>
             </ReactBootStrap.Nav>
             <ReactBootStrap.Nav>
-            <LinkContainer to='/src/components/Home.js'>
+            <LinkContainer to='./'>
               <ReactBootStrap.Nav.Link href="/">Home</ReactBootStrap.Nav.Link>
             </LinkContainer>
-            <LinkContainer to= '/src/components/Shop.js'>
+            <LinkContainer to= '/shop'>
               <ReactBootStrap.Nav.Link href="/shop">Shop</ReactBootStrap.Nav.Link>
+            </LinkContainer>
+            <LinkContainer to= '/login'>
+              <ReactBootStrap.Nav.Link href="/login">Login</ReactBootStrap.Nav.Link>
+            </LinkContainer>
+            <LinkContainer to= '/signup'>
+              <ReactBootStrap.Nav.Link href="/signup">Sign Up</ReactBootStrap.Nav.Link>
             </LinkContainer>
             </ReactBootStrap.Nav>
           </ReactBootStrap.Navbar.Collapse>
